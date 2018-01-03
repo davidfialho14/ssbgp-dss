@@ -74,7 +74,7 @@ The dispatcher is implemented as a server listening for requests from one or mor
 
    Replace `<directory>` with the directory created on the previous step.
 
-##### How to listen on a different port?
+##### How to change listening port?
 By default, the dispatcher will listens for requests from the simulators on port 32014. You can change this port using the `--port` option. To change the listening port to 5000 do the following.
 
         ssbgp-dss-dispatcher <directory> --port=5000
@@ -115,10 +115,10 @@ By default, the dispatcher will listens for requests from the simulators on port
 
         ssbgp-dss-dispatcher <directory> --port=5000
 
-##### Where is data stored?
+##### Where is the data stored?
 Data is dumped to a sub-directory called `complete` inside the *installation directory*.
 
-##### How to set the dispatcher IP address and Port?
+##### How to change the dispatcher's IP address and port?
 By default, the simulator assumes the dispatcher is running on the localhost and listening on port port 32014. To have the simulator connect to a different address/port use the following command.
 
         ssbgp-dss-simulator <directory> --addr=192.168.1.100 --port=5000
