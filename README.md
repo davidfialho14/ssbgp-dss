@@ -27,7 +27,7 @@ Simulations are initially added to the *queue* table. When a simulator requests 
 
 All components require python 3.6 (or later) to be installed. If you are sure your system already includes the correct version of python, you can skip this section. Otherwise, keep reading. We include here some pointers on how to get python installed on different platforms.
 
-###### Windows/MacOS
+##### Windows/MacOS
 
 1. Go to Python's download page https://www.python.org/downloads/
 1. Press the *'Download'* for the latest version of python 3. At the time of writing that is version 3.6.4. This will direct you to the download page for that release.
@@ -36,7 +36,7 @@ All components require python 3.6 (or later) to be installed. If you are sure yo
 
 **IMPORTANT:** make sure **`pip`** is installed.
 
-###### Linux
+##### Linux
 
 Most linux distributions come with python 3 pre-installed. Thus, the first step is to check which version is installed. Enter the following command in a terminal.
 
@@ -74,12 +74,12 @@ The dispatcher is implemented as a server listening for requests from one or mor
 
    Replace `<directory>` with the directory created on the previous step.
 
-###### How to listen on a different port?
+##### How to listen on a different port?
 By default, the dispatcher will listens for requests from the simulators on port 32014. You can change this port using the `--port` option. To change the listening port to 5000 do the following.
 
         ssbgp-dss-dispatcher <directory> --port=5000
 
-###### How to ask for help?
+##### How to ask for help?
 Use options `-h/--help`.
 
         ssbgp-dss-dispatcher --help
@@ -115,17 +115,17 @@ By default, the dispatcher will listens for requests from the simulators on port
 
         ssbgp-dss-dispatcher <directory> --port=5000
 
-###### Where is data stored?
+##### Where is data stored?
 Data is dumped to a sub-directory called `complete` inside the *installation directory*.
 
-###### How to set the dispatcher IP address and Port?
+##### How to set the dispatcher IP address and Port?
 By default, the simulator assumes the dispatcher is running on the localhost and listening on port port 32014. To have the simulator connect to a different address/port use the following command.
 
         ssbgp-dss-simulator <directory> --addr=192.168.1.100 --port=5000
 
 This command indicates the dispatcher is running at the address `192.168.1.100` and listening on port `5000`.
 
-###### How to run multiple simulators on the same machine?
+##### How to run multiple simulators on the same machine?
 Create a different install directory for each simulator. For instance, if we want to have two different simulators,
 
 1. Create two directories: `sim01` and `sim02`
@@ -134,7 +134,7 @@ Create a different install directory for each simulator. For instance, if we wan
         ssbgp-dss-simulator sim01/
         ssbgp-dss-simulator sim02/
 
-###### How to ask for help?
+##### How to ask for help?
 Use options `-h/--help`.
 
         ssbgp-dss-dispatcher --help
